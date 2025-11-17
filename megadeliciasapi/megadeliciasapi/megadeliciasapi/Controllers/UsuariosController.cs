@@ -5,7 +5,7 @@ namespace megadeliciasapi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CajaController : ControllerBase
+    public class UsuariosController : ControllerBase
     {
     }
 }

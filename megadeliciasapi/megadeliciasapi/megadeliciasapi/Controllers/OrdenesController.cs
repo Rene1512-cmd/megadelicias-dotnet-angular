@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace megadeliciasapi.Controllers
 {
-    public class OrdenesController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class OrdenesController : ControllerBase
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }
