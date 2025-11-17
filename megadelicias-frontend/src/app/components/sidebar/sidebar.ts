@@ -1,0 +1,65 @@
+<aside class="w-64 bg-gray-800 text-white p-4 h-screen">
+  <h2 class="text-xl font-bold mb-4">MegaDelicias</h2>
+  
+  <nav class="flex flex-col space-y-2">
+
+    <a routerLink="/dashboard" 
+       routerLinkActive="bg-gray-700"
+       class="p-2 rounded hover:bg-gray-700">
+      Dashboard
+    </a>
+
+    <a routerLink="/caja" 
+       routerLinkActive="bg-gray-700"
+       class="p-2 rounded hover:bg-gray-700">
+      Caja
+    </a>
+
+    <a routerLink="/mesero" 
+       routerLinkActive="bg-gray-700"
+       class="p-2 rounded hover:bg-gray-700">
+      Mesero
+    </a>
+
+    <a routerLink="/cocina" 
+       routerLinkActive="bg-gray-700"
+       class="p-2 rounded hover:bg-gray-700">
+      Cocina
+    </a>
+
+    <a routerLink="/inventario" 
+       routerLinkActive="bg-gray-700"
+       class="p-2 rounded hover:bg-gray-700">
+      Inventario
+    </a>
+
+    <a routerLink="/admin" 
+       routerLinkActive="bg-gray-700"
+       class="p-2 rounded hover:bg-gray-700">
+      Admin
+    </a>
+
+    <a routerLink="/contabilidad" 
+       routerLinkActive="bg-gray-700"
+       class="p-2 rounded hover:bg-gray-700">
+      Contabilidad
+    </a>
+
+    </nav>
+</aside>
+import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router'; // <-- ¡Importa esto!
+
+@Component({
+  selector: 'app-sidebar',
+  standalone: true,
+  imports: [
+    RouterLink,         // <-- ¡Añádelo aquí!
+    RouterLinkActive    // <-- ¡Añádelo aquí!
+  ],
+  templateUrl: './sidebar.component.html',
+  styleUrl: './sidebar.component.css'
+})
+export class SidebarComponent {
+
+}
